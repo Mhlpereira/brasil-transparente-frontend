@@ -1,21 +1,24 @@
-import Head from 'next/head'
+import Link from "next/link";
+import Image from "next/image";
 
-export default function Banner() {
-  return (
-    <Head>
-      <script
-        defer
-        src="https://cloud.umami.is/script.js"
-        data-website-id="800195aa-5b0f-49b6-b341-b0cce882b035"
-      />
-      <meta charSet="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" href="/images/favicon.ico" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=block"
-      />
-    </Head>
-  )
+export default function Header() {
+    return (
+        <header className="bg-gradient-to-br from-[#002776] from-70% to-[#003399] px-8 py-6 text-white shadow-card">
+            <div className="flex flex-col items-center gap-4 px-8 py-6">
+                <Image
+                    src="/images/header-image.png"
+                    alt="Brasil Transparente"
+                    width={200}
+                    height={100}
+                    className="-mt-2 max-w-full"
+                />
+                <Link
+                    href="/"
+                    className="inline-flex items-center gap-2 rounded-lg bg-azul-brasil px-5 py-3 text-white shadow-card transition-all hover:-translate-y-0.5 hover:bg-amarelo-ouro hover:text-azul-brasil"
+                >
+                    Voltar
+                </Link>
+            </div>
+        </header>
+    );
 }

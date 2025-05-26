@@ -1,18 +1,63 @@
-:root {
-  --primary-blue: #002776;
-  --accent-yellow: #ffdf00;
-  --dark-green: #075213;
-  --background: #f8f9fa;
-  --text-primary: #2d3436;
-  --azul-brasil: #002776;
-  --amarelo-ouro: #ffdf00;
-  --verde-escuro: #075213;
-  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  background: var(--background);
-  color: var(--text-primary);
-  font-family: var(--font-sans);
+@layer base {
+  body {
+    @apply bg-background text-text-primary;
+    line-height: 1.5;
+  }
+
+  /* Animações */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInContent {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Classes utilitárias personalizadas */
+  .card-shadow {
+    @apply shadow-[0_4px_6px_rgba(0,0,0,0.1)];
+  }
+
+  .transition-all-custom {
+    @apply transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)];
+  }
 }
