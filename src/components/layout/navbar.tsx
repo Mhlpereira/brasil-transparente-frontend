@@ -11,32 +11,17 @@ export default function Navbar() {
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild>
                         <Link href="/" className="text-lg font-semibold">
-                            reservado para logo
+                            União federal
                         </Link>
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>
                         <Link href="/" className="text-lg font-semibold">
-                            Inicio
+                            Resumo de gastos
                         </Link>
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>
                         <Link href="/" className="text-lg font-semibold">
-                            Estados
-                        </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                        <Link href="/" className="text-lg font-semibold">
-                            Metodologia
-                        </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                        <Link href="/" className="text-lg font-semibold">
-                            Origem
-                        </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                        <Link href="/" className="text-lg font-semibold">
-                            Sobre
+                            Gastos detalhados
                         </Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
