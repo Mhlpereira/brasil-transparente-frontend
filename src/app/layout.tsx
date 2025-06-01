@@ -1,6 +1,7 @@
-import Header from '@/components/layout/banner'
 import Footer from '@/components/layout/footer'
 import type { Metadata } from 'next'
+import './globals.css'
+import Header from '@/components/layout/header'
 
 export const metadata: Metadata = {
   title: 'Brasil Transparente',
