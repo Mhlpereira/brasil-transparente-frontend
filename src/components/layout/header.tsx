@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Button from "./button";
 
 export default function Header() {
     return (
@@ -8,16 +8,16 @@ export default function Header() {
                 <Image
                     src="/white-transparent.png"
                     alt="Brasil Transparente"
-                    width={200}
-                    height={50}
+                    width={400}
+                    height={200}
                     className="-mt-2 max-w-full"
                 />
-                <Link
-                    href="/"
-                    className="inline-flex items-center gap-2 rounded-lg bg-azul-brasil px-5 py-3 text-white shadow-card transition-all hover:-translate-y-0.5 hover:bg-amarelo-ouro hover:text-azul-brasil"
-                >
-                    Voltar
-                </Link>
+                <nav className="border-t border-white/20 mt-12 pt-8 text-center flex flex-row gap-3">
+                    <Button data={{ nome: "União Federal", color: "#002776" }} />
+
+                    <Button data={{ nome: "Resumo dos gatos", color: "#002776" }} />
+                    <Button data={{ nome: "Gastos detalhados", color: "#002776" }} />
+                </nav>
             </div>
         </header>
     );
