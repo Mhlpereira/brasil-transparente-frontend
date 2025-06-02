@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="bg-gradient-to-br from-[#002776] to-[#075213]">
             <div className="">
                 <div className="flex">
-                    <div className="w-1/2">
+                    <nav className="w-1/2">
                         <h3 className="text-xl font-semibold" style={{ color: "#ffdf00" }}>
                             Explorar
                         </h3>
@@ -50,7 +50,7 @@ export default function Footer() {
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
 
                     <div className="w-1/2">
                         <h3 className="text-xl font-semibold mb-6" style={{ color: "#ffdf00" }}>
@@ -79,8 +79,8 @@ export default function Footer() {
                                 </form>
                             </div>
 
-                            <div className="">
-                                <div className="flex items-center bg-white/90">
+                            <div className="rounded-lg p-4 shadow-lg bg-white/90 w-auto">
+                                <div className="flex items-center">
                                     <Image
                                         src="/bitcoin.png"
                                         alt="Bitcoin"
@@ -88,12 +88,12 @@ export default function Footer() {
                                         height={40}
                                         className="w-10 h-10 flex-shrink-0"
                                     />
-                                    <div className="min-w-0 flex-1">
+                                    <address className="min-w-0 flex-1">
                                         <p className="text-gray-700 font-semibold mb-1">Carteira Bitcoin:</p>
                                         <p className="text-gray-600 text-sm break-all font-mono">
                                             bc1qhzz5hp3qz8ew5mkgzt5t65wa4pg8ewxdy6lyps
                                         </p>
-                                    </div>
+                                    </address>
                                 </div>
                             </div>
                         </div>
